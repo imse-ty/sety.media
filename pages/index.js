@@ -31,7 +31,7 @@ export default function Home() {
               Instagram
             </a>
             <p class="text-gray-300 mt-4">
-              © 2020 Imsety Taylor. All rights reserved.
+              © 2021 Imsety Taylor. All rights reserved.
             </p>
           </footer>
         </div>
