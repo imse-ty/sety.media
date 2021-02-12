@@ -25,6 +25,7 @@ export default function Home() {
             <a
               href="https://www.instagram.com/setymedia/"
               target="_blank"
+              rel="noreferrer"
               class="text-xl font-bold text-wireframeRed hover:text-frameworkGray underline transition-colors"
             >
               Instagram
