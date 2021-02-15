@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div class="container mx-auto px-12 text-frameworkGray">
+    <div className="container mx-auto px-12 text-frameworkGray">
       <Head>
         <title>Imsety Taylor - Motion Designer</title>
         <link rel="icon" href="/favicon.ico" />
