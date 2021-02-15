@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import Masthead from '../components/masthead';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div class="text-frameworkGray">
+    <div class="container mx-auto px-12 text-frameworkGray">
       <Head>
         <title>Imsety Taylor - Motion Designer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,30 +14,8 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div class="container mx-auto px-12">
-        <div class="flex justify-center h-screen flex-col">
-          <h1 class="text-7xl font-semibold">
-            Hey! My Name is <span class="text-wireframeRed">Imsety</span>.
-          </h1>
-          <div class="bg-wireframeRed h-2 w-32 my-8"></div>
-          <p class="text-xl font-medium">
-            I'm a Motion Designer based in Atlanta, GA.
-          </p>
-          <footer class="mt-64">
-            <a
-              href="https://www.instagram.com/setymedia/"
-              target="_blank"
-              rel="noreferrer"
-              class="text-xl font-bold text-wireframeRed hover:text-frameworkGray underline transition-colors"
-            >
-              Instagram
-            </a>
-            <p class="text-gray-300 mt-4">
-              © 2021 Imsety Taylor. All rights reserved.
-            </p>
-          </footer>
-        </div>
-      </div>
+      <Masthead />
+      <Footer />
     </div>
   );
 }
