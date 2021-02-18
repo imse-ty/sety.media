@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Masthead from '../components/masthead';
 import Footer from '../components/footer';
-import Container from '../components/container';
 
 export default function Home() {
   return (
