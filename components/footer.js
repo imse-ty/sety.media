@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-64">
+    <footer className="mt-auto">
       <a
         href="https://www.instagram.com/setymedia/"
         target="_blank"

@@ -5,7 +5,7 @@ import Container from '../components/Container';
 
 export default function Home() {
   return (
-    <div className="min-h-screen text-frameworkGray bg-outlineWhite">
+    <>
       <Head>
         <title>Imsety Taylor - Motion Designer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,10 +15,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Container>
+      <div className="flex flex-col min-h-screen text-frameworkGray bg-outlineWhite">
         <Masthead />
         <Footer />
-      </Container>
-    </div>
+      </div>
+    </>
   );
 }
