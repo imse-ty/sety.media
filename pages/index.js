@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Masthead from '../components/masthead';
 import Footer from '../components/footer';
+import Container from '../components/Container';
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div className="container mx-auto px-12">
+      <Container>
         <Masthead />
         <Footer />
-      </div>
+      </Container>
     </div>
   );
 }
