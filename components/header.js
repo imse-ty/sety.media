@@ -8,7 +8,9 @@ export default function Header() {
     <header>
       <Container>
         <div className="flex justify-between items-center py-8">
-          <Brandmark />
+          <a href="#">
+            <Brandmark />
+          </a>
           <Navigation />
         </div>
       </Container>
