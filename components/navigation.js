@@ -2,7 +2,7 @@ import React from 'react';
 
 function MenuItem(props) {
   return (
-    <li className="transition pr-9 hover:text-wireframeRed focus:text-wireframeRed">
+    <li className="transition pl-9 hover:text-wireframeRed focus:text-wireframeRed">
       <a href="#">{props.children}</a>
     </li>
   );

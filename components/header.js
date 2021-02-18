@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <Container>
-        <div className="py-8">
+        <div className="flex justify-between items-center py-8">
           <Brandmark />
           <Navigation />
         </div>
