@@ -2,7 +2,7 @@ export default function Masthead() {
   return (
     <div className="relative flex justify-center items-center h-60v overflow-hidden">
       {/* Heading */}
-      <div className="relative p-16 z-30 w-auto min-w-full">
+      <div className="relative z-30 p-16">
         <h1 className="text-7xl font-semibold">
           Hey! My Name is <span className="text-wireframeRed">Imsety</span>.
         </h1>
