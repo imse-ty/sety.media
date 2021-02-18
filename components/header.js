@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from './container';
+import Navigation from './navigation';
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
             className="w-20"
             alt="SetyMedia logo"
           />
+          <Navigation />
         </div>
       </Container>
     </header>
