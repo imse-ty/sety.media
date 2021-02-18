@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Masthead from '../components/masthead';
 import Footer from '../components/footer';
+import Header from '../components/header';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         />
       </Head>
       <div className="flex flex-col min-h-screen text-frameworkGray bg-outlineWhite">
+        <Header />
         <Masthead />
         <Footer />
       </div>
