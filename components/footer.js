@@ -2,19 +2,13 @@ import Container from './container';
 
 export default function Footer() {
   return (
-    <footer className="mt-auto">
+    <footer className="mt-auto py-8">
       <Container>
-        <a
-          href="https://www.instagram.com/setymedia/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-xl font-bold text-wireframeRed hover:text-frameworkGray underline transition-colors"
-        >
-          Instagram
-        </a>
-        <p className="text-gray-300 mt-4">
-          © 2021 Imsety Taylor. All rights reserved.
-        </p>
+        <div className="flex justify-center">
+          <p className="text-gray-300 mt-4">
+            © 2021 Imsety Taylor. All rights reserved.
+          </p>
+        </div>
       </Container>
     </footer>
   );
