@@ -1,4 +1,5 @@
 import React from 'react';
+import Brandmark from './brandmark';
 import Container from './container';
 import Navigation from './navigation';
 
@@ -7,11 +8,7 @@ export default function Header() {
     <header>
       <Container>
         <div className="py-8">
-          <img
-            src="./setymedia-brandmark-black-on-red.svg"
-            className="w-20"
-            alt="SetyMedia logo"
-          />
+          <Brandmark />
           <Navigation />
         </div>
       </Container>
