@@ -14,8 +14,8 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Masthead />
       <div className="container mx-auto px-12">
+        <Masthead />
         <Footer />
       </div>
     </div>
