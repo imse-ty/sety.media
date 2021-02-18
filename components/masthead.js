@@ -11,7 +11,7 @@ export default function Masthead() {
           I'm a Motion Designer based in Atlanta, GA.
         </p>
       </div>
-      <div className="absolute z-20 bg-outlineWhite bg-opacity-90 w-full h-full"></div>
+      <div className="absolute z-20 bg-outlineWhite bg-opacity-90 min-w-full min-h-full"></div>
       {/* Video */}
       <video
         autoPlay
