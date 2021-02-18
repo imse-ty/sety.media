@@ -11,7 +11,7 @@ function MenuItem(props) {
 export default function Navigation() {
   return (
     <nav>
-      <ul className="flex text-xl font-semibold text-frameworkGray">
+      <ul className="flex text-xl font-semibold uppercase text-frameworkGray">
         <MenuItem>Work</MenuItem>
         <MenuItem>Info</MenuItem>
         <MenuItem>Blog</MenuItem>
