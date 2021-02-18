@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div className="text-frameworkGray">
+    <div className="min-h-screen text-frameworkGray bg-outlineWhite">
       <Head>
         <title>Imsety Taylor - Motion Designer</title>
         <link rel="icon" href="/favicon.ico" />
