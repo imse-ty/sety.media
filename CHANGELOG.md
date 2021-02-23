@@ -6,7 +6,7 @@
 
 ### Added
 
-- `CHANGELOG.md` written in "[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)" conventions.
+- `CHANGELOG.md` written in "[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)" conventions. (changelogception?)
 
 ## v0.1.1 - 2021-02-12
 
