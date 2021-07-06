@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div class="text-frameworkGray">
       <Head>
-        <title>Imsety Taylor - Motion Designer</title>
+        <title>SetyMedia</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
