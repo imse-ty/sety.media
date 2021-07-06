@@ -1,6 +1,52 @@
+import { useState } from 'react';
 import Head from 'next/head';
 
 export default function Home() {
+  const randomNumber = Math.floor(Math.random() * 3);
+  const [theme, setTheme] = useState(randomNumber);
+  const setymediaColors = {
+    frameworkGray: '#1D1D26',
+    outlineWhite: '#F5F5F5',
+    wireframeRed: '#DD1444'
+  };
+
+  function cycleThemes() {
+    if (theme === 0) {
+      setTheme(theme + 1);
+    }
+
+    if (theme === 1) {
+      setTheme(theme + 1);
+    }
+
+    if (theme === 2) {
+      setTheme(0);
+    }
+  }
+
+  function setWordmarkColors() {
+    if (theme === 0) {
+      return {
+        setyColor: setymediaColors.frameworkGray,
+        mediaColor: setymediaColors.wireframeRed
+      };
+    }
+
+    if (theme === 1) {
+      return {
+        setyColor: setymediaColors.outlineWhite,
+        mediaColor: setymediaColors.frameworkGray
+      };
+    }
+
+    if (theme === 2) {
+      return {
+        setyColor: setymediaColors.outlineWhite,
+        mediaColor: setymediaColors.wireframeRed
+      };
+    }
+  }
+
   return (
     <div class="text-frameworkGray">
       <Head>
