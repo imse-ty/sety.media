@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import Wordmark from '../components/wordmark';
 
 export default function Home() {
   const randomNumber = Math.floor(Math.random() * 3);
@@ -48,7 +49,15 @@ export default function Home() {
   }
 
   return (
-    <div class="text-frameworkGray">
+    <div
+      className={`
+      flex flex-col min-h-screen text-frameworkGray transition-colors duration-500
+
+      ${theme === 0 && 'bg-outlineWhite'}
+      ${theme === 1 && 'bg-wireframeRed'}
+      ${theme === 2 && 'bg-frameworkGray'}
+    `}
+    >
       <Head>
         <title>SetyMedia</title>
         <link rel="icon" href="/favicon.ico" />
@@ -58,22 +67,24 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <div class="container mx-auto px-12">
-        <div class="flex justify-center h-screen flex-col">
-          <h1 class="text-7xl font-semibold">
-            Hey! My Name is <span class="text-wireframeRed">Imsety</span>.
-          </h1>
-          <div class="bg-wireframeRed h-2 w-32 my-8"></div>
-          <p class="text-xl font-medium">
-            I'm a Motion Designer based in Atlanta, GA.
-          </p>
-          <footer class="mt-64">
-            <p class="text-gray-300 mt-4">
-              Copyright © 2021 SetyMedia. All rights reserved.
-            </p>
-          </footer>
+
+      <main className="flex-grow flex items-center justify-center ">
+        <div
+          onClick={() => cycleThemes()}
+          className="cursor-pointer w-60 md:w-96"
+        >
+          <Wordmark
+            setyColor={setWordmarkColors().setyColor}
+            mediaColor={setWordmarkColors().mediaColor}
+          />
         </div>
-      </div>
+      </main>
+
+      <footer className="p-14">
+        <p className="text-xs text-center">
+          Copyright © 2021 SetyMedia. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
