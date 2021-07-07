@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### Added
+
+- Redesigned landing page! When you click on the SetyMedia wordmark, you go to [imsety.com](https://imsety.com). ([#13])
+- Fun easter egg, when you click anywhere on the page the color pallette changes. ([#13])
+
+### Changed
+
+- Changed the footer copyright notice from "Imsety Taylor" to "SetyMedia." ([#13])
+
+[#13]: https://github.com/imse-ty/sety.media/issues/13
+
 ## v0.1.2 - 2021-02-23
 
 ### Added
