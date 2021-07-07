@@ -14,6 +14,7 @@ export default function Wordmark({ setyColor, mediaColor }) {
 
   return (
     <motion.svg
+      alt="SetyMedia wordmark"
       variants={svgVariant}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1680 334.72"
