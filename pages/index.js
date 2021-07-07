@@ -10,6 +10,7 @@ import Wordmark from '../components/wordmark';
 export default function Home() {
   const [theme, setTheme] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const randomNumber = Math.floor(Math.random() * 3);
@@ -49,8 +50,6 @@ export default function Home() {
       };
     }
   }
-
-  const router = useRouter();
 
   async function goToImsety() {
     setIsLoading(true);
