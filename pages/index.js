@@ -14,13 +14,9 @@ export default function Home() {
   function cycleThemes() {
     if (theme === 0) {
       setTheme(theme + 1);
-    }
-
-    if (theme === 1) {
+    } else if (theme === 1) {
       setTheme(theme + 1);
-    }
-
-    if (theme === 2) {
+    } else if (theme === 2) {
       setTheme(0);
     }
   }
