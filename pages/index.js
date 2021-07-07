@@ -16,7 +16,7 @@ export default function Home() {
     setTheme(randomNumber);
   }, []);
 
-  function cycleThemes() {
+  function cycleTheme() {
     if (theme === 0) {
       setTheme(theme + 1);
     } else if (theme === 1) {
@@ -67,7 +67,7 @@ export default function Home() {
 
   return (
     <div
-      onClick={() => cycleThemes()}
+      onClick={() => cycleTheme()}
       className={`
       flex flex-col overflow-hidden min-h-screen text-frameworkGray transition-colors duration-500
 
