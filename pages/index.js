@@ -1,14 +1,20 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useRouter } from 'next/router';
 import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
 import Wordmark from '../components/wordmark';
 
 export default function Home() {
-  const router = useRouter();
-  const randomNumber = Math.floor(Math.random() * 3);
-  const [theme, setTheme] = useState(randomNumber);
+  const [theme, setTheme] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const randomNumber = Math.floor(Math.random() * 3);
+    setTheme(randomNumber);
+  }, []);
+
+  const router = useRouter();
+
   const setymediaColors = {
     frameworkGray: '#1D1D26',
     outlineWhite: '#F5F5F5',
