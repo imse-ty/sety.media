@@ -26,7 +26,7 @@ export default function Home() {
     }
   }
 
-  function setWordmarkColors() {
+  function getWordmarkColors() {
     if (theme === 0) {
       return {
         setyColor: setymediaColors.frameworkGray,
@@ -116,8 +116,8 @@ export default function Home() {
             className="w-60 md:w-96"
           >
             <Wordmark
-              setyColor={setWordmarkColors().setyColor}
-              mediaColor={setWordmarkColors().mediaColor}
+              setyColor={getWordmarkColors().setyColor}
+              mediaColor={getWordmarkColors().mediaColor}
             />
           </motion.div>
         </motion.div>
