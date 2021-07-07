@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-07-06
+
+First stable release! 🥳 🎉
+
 ### Added
 
 - Redesigned landing page! When you click on the SetyMedia wordmark, you go to [imsety.com](https://imsety.com). ([#13])
@@ -44,7 +48,8 @@ Initial development! 🥳🎉
 - A link to my Instagram page
 - Copyright footer
 
-[unreleased]: https://github.com/imse-ty/sety.media/compare/v0.1.2...HEAD
+[unreleased]: https://github.com/imse-ty/sety.media/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/imse-ty/sety.media/compare/v0.1.2...v1.0.0
 [0.1.2]: https://github.com/imse-ty/sety.media/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/imse-ty/sety.media/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/imse-ty/sety.media/releases/tag/v0.1.0
