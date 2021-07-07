@@ -15,16 +15,6 @@ export default function Home() {
     setTheme(randomNumber);
   }, []);
 
-  const router = useRouter();
-
-  const wordmarkVariant = {
-    hidden: { scale: 3 },
-    show: {
-      scale: 1,
-      transition: { type: 'spring', duration: 2 }
-    }
-  };
-
   function cycleThemes() {
     if (theme === 0) {
       setTheme(theme + 1);
@@ -58,6 +48,8 @@ export default function Home() {
     }
   }
 
+  const router = useRouter();
+
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
@@ -67,6 +59,14 @@ export default function Home() {
     await sleep(2500);
     router.push('https://imsety.com');
   }
+
+  const wordmarkVariant = {
+    hidden: { scale: 3 },
+    show: {
+      scale: 1,
+      transition: { type: 'spring', duration: 2 }
+    }
+  };
 
   return (
     <div
