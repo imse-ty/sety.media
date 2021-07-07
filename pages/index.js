@@ -61,7 +61,7 @@ export default function Home() {
     <div
       onClick={() => cycleThemes()}
       className={`
-      flex flex-col min-h-screen text-frameworkGray transition-colors duration-500
+      flex flex-col overflow-hidden min-h-screen text-frameworkGray transition-colors duration-500
 
       ${theme === 0 && 'bg-outlineWhite'}
       ${theme === 1 && 'bg-wireframeRed'}
