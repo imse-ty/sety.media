@@ -88,15 +88,28 @@ export default function Home() {
       </Head>
 
       <main className="flex-grow flex items-center justify-center ">
-        <div
-          onClick={() => cycleThemes()}
-          className="cursor-pointer w-60 md:w-96"
+        <motion.div
+          transition={{ type: 'spring', duration: 0.6, bounce: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          onClick={() => goToImsety()}
+          className={`${isLoading ? 'cursor-wait' : 'cursor-pointer'}`}
         >
-          <Wordmark
-            setyColor={setWordmarkColors().setyColor}
-            mediaColor={setWordmarkColors().mediaColor}
-          />
-        </div>
+          <motion.div
+            variants={wordmarkVariant}
+            initial="hidden"
+            animate="show"
+            whileTap={{
+              scale: 0.8,
+              transition: { type: 'spring', duration: 0.3, bounce: 0.5 }
+            }}
+            className="w-60 md:w-96"
+          >
+            <Wordmark
+              setyColor={setWordmarkColors().setyColor}
+              mediaColor={setWordmarkColors().mediaColor}
+            />
+          </motion.div>
+        </motion.div>
       </main>
 
       <footer className="p-14">
