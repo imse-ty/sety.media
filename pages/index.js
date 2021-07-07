@@ -13,6 +13,13 @@ export default function Home() {
     outlineWhite: '#F5F5F5',
     wireframeRed: '#DD1444'
   };
+  const wordmarkVariant = {
+    hidden: { scale: 3 },
+    show: {
+      scale: 1,
+      transition: { type: 'spring', duration: 2 }
+    }
+  };
 
   function cycleThemes() {
     if (theme === 0) {
