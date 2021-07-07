@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import setymediaColors from '../constants/setymedia-colors';
 
 export default function Wordmark({ setyColor, mediaColor }) {
   const transition = 'transition-colors duration-500';
@@ -76,6 +77,6 @@ export default function Wordmark({ setyColor, mediaColor }) {
 }
 
 Wordmark.defaultProps = {
-  setyColor: '#F5F5F5',
-  mediaColor: '#DD1444'
+  setyColor: setymediaColors.frameworkGray,
+  mediaColor: setymediaColors.wireframeRed
 };
