@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
 import Wordmark from '../components/wordmark';
+import setymediaColors from '../constants/setymedia-colors';
 
 export default function Home() {
   const [theme, setTheme] = useState(0);
@@ -16,11 +17,6 @@ export default function Home() {
 
   const router = useRouter();
 
-  const setymediaColors = {
-    frameworkGray: '#1D1D26',
-    outlineWhite: '#F5F5F5',
-    wireframeRed: '#DD1444'
-  };
   const wordmarkVariant = {
     hidden: { scale: 3 },
     show: {
