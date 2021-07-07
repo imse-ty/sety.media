@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Progress gets stuck when user goes back to the site after the redirect on Chrome for Android. ([#15])
+
+[#15]: https://github.com/imse-ty/sety.media/issues/15
+
 ## [1.0.0] - 2021-07-06
 
 First stable release! 🥳 🎉

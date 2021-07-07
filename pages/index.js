@@ -55,6 +55,7 @@ export default function Home() {
   async function goToImsetyWebsite() {
     setIsLoading(true);
     await sleep(2500);
+    setIsLoading(false);
     router.push('https://imsety.com');
   }
 
