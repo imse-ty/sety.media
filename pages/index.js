@@ -81,6 +81,7 @@ export default function Home() {
     >
       <Head>
         <title>SetyMedia</title>
+        <description>SetyMedia landing page.</description>
       </Head>
 
       <main className="flex-grow flex items-center justify-center ">
