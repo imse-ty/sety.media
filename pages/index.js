@@ -66,6 +66,8 @@ export default function Home() {
       ${theme === 0 && 'text-frameworkGray bg-outlineWhite'}
       ${theme === 1 && 'text-outlineWhite bg-wireframeRed'}
       ${theme === 2 && 'text-outlineWhite bg-frameworkGray'}
+
+      ${isLoading && 'cursor-wait'}
     `}
     >
       <Head>
