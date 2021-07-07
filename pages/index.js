@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useEffect, useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
 import Wordmark from '../components/wordmark';
@@ -10,6 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     const randomNumber = Math.floor(Math.random() * 3);
+
     setTheme(randomNumber);
   }, []);
 
