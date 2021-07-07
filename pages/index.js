@@ -59,6 +59,7 @@ export default function Home() {
 
   return (
     <div
+      onClick={() => cycleThemes()}
       className={`
       flex flex-col min-h-screen text-frameworkGray transition-colors duration-500
 
