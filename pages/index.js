@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Wordmark from '../components/wordmark';
 
 export default function Home() {
+  const router = useRouter();
   const randomNumber = Math.floor(Math.random() * 3);
   const [theme, setTheme] = useState(randomNumber);
+  const [isLoading, setIsLoading] = useState(false);
   const setymediaColors = {
     frameworkGray: '#1D1D26',
     outlineWhite: '#F5F5F5',
@@ -42,6 +45,16 @@ export default function Home() {
         mediaColor: setymediaColors.wireframeRed
       };
     }
+  }
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  async function goToImsety() {
+    setIsLoading(true);
+    await sleep(2500);
+    router.push('https://imsety.com');
   }
 
   return (
