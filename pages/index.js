@@ -63,9 +63,9 @@ export default function Home() {
       className={`
       flex flex-col overflow-hidden min-h-screen text-frameworkGray transition-colors duration-500
 
-      ${theme === 0 && 'bg-outlineWhite'}
-      ${theme === 1 && 'bg-wireframeRed'}
-      ${theme === 2 && 'bg-frameworkGray'}
+      ${theme === 0 && 'text-frameworkGray bg-outlineWhite'}
+      ${theme === 1 && 'text-outlineWhite bg-wireframeRed'}
+      ${theme === 2 && 'text-outlineWhite bg-frameworkGray'}
     `}
     >
       <Head>
