@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [Unreleased]
 
 ### Added
 
@@ -13,13 +13,13 @@
 
 [#13]: https://github.com/imse-ty/sety.media/issues/13
 
-## v0.1.2 - 2021-02-23
+## [0.1.2] - 2021-02-23
 
 ### Added
 
 - `CHANGELOG.md` written in "[Keep a Changelog](https://keepachangelog.com/en/1.0.0/)" conventions. (changelogception?)
 
-## v0.1.1 - 2021-02-12
+## [0.1.1] - 2021-02-12
 
 ### Added
 
@@ -34,7 +34,7 @@
 - Copyright footer year from "2020" to "2021." (#5)
 - Version number in `package.json`. (#7)
 
-## v0.1.0 - 2021-02-12
+## [0.1.0] - 2021-02-12
 
 Initial development! 🥳🎉
 
@@ -43,3 +43,8 @@ Initial development! 🥳🎉
 - Basic landing section
 - A link to my Instagram page
 - Copyright footer
+
+[unreleased]: https://github.com/imse-ty/sety.media/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/imse-ty/sety.media/compare/v0.1.1...v0.1.2
+[0.1.1]: https://github.com/imse-ty/sety.media/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/imse-ty/sety.media/releases/tag/v0.1.0
