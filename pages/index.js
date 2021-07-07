@@ -6,6 +6,7 @@ import sleep from '../lib/sleep';
 import setymediaColors from '../constants/setymedia-colors';
 import Footer from '../components/footer';
 import Wordmark from '../components/wordmark';
+import ProgressBar from '../components/progress-bar';
 
 export default function Home() {
   const [theme, setTheme] = useState(0);
@@ -51,7 +52,7 @@ export default function Home() {
     }
   }
 
-  async function goToImsety() {
+  async function goToImsetyWebsite() {
     setIsLoading(true);
     await sleep(2500);
     router.push('https://imsety.com');
@@ -85,16 +86,8 @@ export default function Home() {
       <main className="flex-grow flex items-center justify-center ">
         <AnimatePresence>
           {isLoading && (
-            <motion.div
-              initial={{ left: '-100%' }}
-              animate={{ left: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 2 }}
-              className={`
-                fixed top-0 -left-full w-screen h-2
-
-                ${theme === 1 ? 'bg-outlineWhite' : 'bg-wireframeRed'}
-              `}
+            <ProgressBar
+              color={theme === 1 ? 'bg-outlineWhite' : 'bg-wireframeRed'}
             />
           )}
         </AnimatePresence>
@@ -102,7 +95,7 @@ export default function Home() {
         <motion.div
           transition={{ type: 'spring', duration: 0.6, bounce: 0.5 }}
           whileHover={{ scale: 1.1 }}
-          onClick={() => goToImsety()}
+          onClick={() => goToImsetyWebsite()}
           className={`${isLoading ? 'cursor-wait' : 'cursor-pointer'}`}
         >
           <motion.div
