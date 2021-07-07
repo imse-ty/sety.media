@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { AnimatePresence, motion } from 'framer-motion';
 import Wordmark from '../components/wordmark';
 
 export default function Home() {
@@ -88,6 +89,22 @@ export default function Home() {
       </Head>
 
       <main className="flex-grow flex items-center justify-center ">
+        <AnimatePresence>
+          {isLoading && (
+            <motion.div
+              initial={{ left: '-100%' }}
+              animate={{ left: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2 }}
+              className={`
+                fixed top-0 -left-full w-screen h-2
+
+                ${theme === 1 ? 'bg-outlineWhite' : 'bg-wireframeRed'}
+              `}
+            />
+          )}
+        </AnimatePresence>
+
         <motion.div
           transition={{ type: 'spring', duration: 0.6, bounce: 0.5 }}
           whileHover={{ scale: 1.1 }}
