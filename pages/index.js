@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
-import Wordmark from '../components/wordmark';
+import sleep from '../lib/sleep';
 import setymediaColors from '../constants/setymedia-colors';
+import Wordmark from '../components/wordmark';
 
 export default function Home() {
   const [theme, setTheme] = useState(0);
@@ -49,10 +50,6 @@ export default function Home() {
   }
 
   const router = useRouter();
-
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
 
   async function goToImsety() {
     setIsLoading(true);
