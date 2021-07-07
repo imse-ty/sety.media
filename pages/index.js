@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
 import sleep from '../lib/sleep';
 import setymediaColors from '../constants/setymedia-colors';
+import Footer from '../components/footer';
 import Wordmark from '../components/wordmark';
 
 export default function Home() {
@@ -123,11 +124,7 @@ export default function Home() {
         </motion.div>
       </main>
 
-      <footer className="p-14">
-        <p className="text-xs text-center">
-          Copyright © 2021 SetyMedia. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
